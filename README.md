@@ -6,6 +6,7 @@
 
 [URL Shortener Microservice](./project-urlshortener/README.md)
 
+[Exercise Tracker](./project-exercisetracker/README.md)
 
 ## Challenge
 [learn express](./boilerplate-express/README.md);
