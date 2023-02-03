@@ -8,6 +8,9 @@
 
 [Exercise Tracker](./project-exercisetracker/README.md)
 
+[File Metadata Microservice](./project-filemetadata/README.md)
+
+
 ## Challenge
 [learn express](./boilerplate-express/README.md);
 [MongoDB with express](./boilerplate-mongomongoose/README.md);
