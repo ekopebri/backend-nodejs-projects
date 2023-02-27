@@ -4,13 +4,33 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tsc": "tsc",
+    "build:watch": "tsc",
+    "start:dev": "tsc",
+    "start:tsdev": "ts-node-dev index.ts",
+    "start:dev:watch": "npm-run-all tsc --parallel start:dev build:watch sync:watch",
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:debug": "nodemon --inspect index.js",
+    "test": "mocha",
+    "test:watch": "mocha --watch",
+    "test:coverage": "nyc mocha",
+    "test:coverage:html": "nyc --reporter=html mocha",
+    "sync": "browser-sync start -p localhost:4005 -w -f ./dist"
   },
   "keywords": [],
   "author": "Eko Pebrisulistiyo",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
+    "nyc": "^15.1.0",
+    "ts-node-dev": "^2.0.0"
   }
 }
